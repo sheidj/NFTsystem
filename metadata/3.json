@@ -1,0 +1,28 @@
+{
+  "name": "荣誉证书 NFT",
+  "description": "优秀毕业生专属荣誉证书NFT，表彰您在学业上的杰出成就。限量发行。",
+  "image": "ipfs://QmPJAWYWcj2bUUAfxbT2AkvxNrkJsz2RiU4q63L1jtqrVu",
+  "external_url": "https://your-university.edu/graduation",
+  "attributes": [
+    {
+      "trait_type": "类型",
+      "value": "荣誉证书"
+    },
+    {
+      "trait_type": "稀有度",
+      "value": "稀有"
+    },
+    {
+      "trait_type": "年份",
+      "value": "2024"
+    },
+    {
+      "trait_type": "协议",
+      "value": "ERC-1155"
+    },
+    {
+      "trait_type": "荣誉等级",
+      "value": "优秀毕业生"
+    }
+  ]
+}

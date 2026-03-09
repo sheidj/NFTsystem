@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Hardhat
+cache/
+artifacts/
+typechain-types/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+frontend/.next/
+frontend/out/
+
+# Coverage
+coverage/
+coverage.json
+
+# Misc
+*.log
+npm-debug.log*
+
+# TypeScript build info
+*.tsbuildinfo
+

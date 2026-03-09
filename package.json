@@ -1,0 +1,38 @@
+{
+  "name": "graduation-nft",
+  "version": "1.0.0",
+  "description": "高校毕业纪念NFT系统 - 基于OpenSea与ERC-1155协议",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:amoy": "hardhat run scripts/deploy.js --network amoy",
+    "interact": "hardhat run scripts/interact.js --network localhost",
+    "node": "hardhat node",
+    "ipfs:upload": "node scripts/upload-to-ipfs.js",
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "nft",
+    "erc1155",
+    "graduation",
+    "university",
+    "opensea",
+    "ethereum"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "form-data": "^4.0.0"
+  }
+}
+

@@ -1,0 +1,24 @@
+{
+  "name": "纪念徽章 NFT",
+  "description": "专属毕业纪念徽章，记录您在校园的美好时光。独一无二的数字收藏品。",
+  "image": "ipfs://QmYEf3sQsqt9kSJvhGaPpsSQzRByJ4w1f5r91kwNbWMY1W",
+  "external_url": "https://your-university.edu/graduation",
+  "attributes": [
+    {
+      "trait_type": "类型",
+      "value": "纪念徽章"
+    },
+    {
+      "trait_type": "稀有度",
+      "value": "普通"
+    },
+    {
+      "trait_type": "年份",
+      "value": "2024"
+    },
+    {
+      "trait_type": "协议",
+      "value": "ERC-1155"
+    }
+  ]
+}

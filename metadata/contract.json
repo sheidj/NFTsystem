@@ -1,0 +1,9 @@
+{
+  "name": "高校毕业纪念NFT",
+  "description": "基于ERC-1155协议的高校毕业纪念NFT系统。将毕业记忆永久保存在区块链上，包含毕业证书、纪念徽章、荣誉证书和特殊奖项等多种类型的数字收藏品。",
+  "image": "ipfs://YOUR_CID/collection.png",
+  "external_link": "https://your-university.edu/graduation",
+  "seller_fee_basis_points": 0,
+  "fee_recipient": ""
+}
+

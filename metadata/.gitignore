@@ -1,0 +1,5 @@
+# IPFS 上传结果（包含 CID，可以提交到 Git）
+# ipfs-upload-results.json
+
+# 如果你不想公开 IPFS CID，取消上面的注释
+

@@ -1,0 +1,46 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- 主背景 -->
+  <rect width="500" height="500" fill="url(#badgeGrad)"/>
+  
+  <!-- 装饰图形 -->
+  <circle cx="100" cy="400" r="35" fill="#34d399" opacity="0.3"/>
+  <circle cx="400" cy="100" r="45" fill="#34d399" opacity="0.3"/>
+  <circle cx="80" cy="120" r="28" fill="#6ee7b7" opacity="0.4"/>
+  
+  <!-- 徽章主体 - 八边形 -->
+  <polygon points="250,80 320,120 350,190 320,260 250,300 180,260 150,190 180,120" 
+           fill="url(#centerGlow)" stroke="#f97316" stroke-width="6"/>
+  
+  <!-- 内圈装饰 -->
+  <circle cx="250" cy="190" r="75" fill="none" stroke="#fff" stroke-width="3" opacity="0.6"/>
+  <circle cx="250" cy="190" r="65" fill="none" stroke="#fff" stroke-width="2" opacity="0.4"/>
+  
+  <!-- 徽章图标 -->
+  <text x="250" y="220" font-family="Arial, sans-serif" font-size="70" text-anchor="middle" fill="#fff">🏅</text>
+  
+  <!-- 丝带效果 -->
+  <path d="M 220 280 L 220 380 L 240 360 L 260 380 L 260 280 Z" fill="#ef4444" opacity="0.8"/>
+  <path d="M 240 280 L 240 380 L 260 360 L 280 380 L 280 280 Z" fill="#dc2626" opacity="0.8"/>
+  
+  <!-- 文字 -->
+  <text x="250" y="350" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#fff">纪念徽章</text>
+  <text x="250" y="385" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#d1fae5">Memorial Badge</text>
+  
+  <!-- 底部装饰星星 -->
+  <text x="200" y="440" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#fbbf24" opacity="0.8">⭐</text>
+  <text x="250" y="450" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#fbbf24">⭐</text>
+  <text x="300" y="440" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#fbbf24" opacity="0.8">⭐</text>
+</svg>
+

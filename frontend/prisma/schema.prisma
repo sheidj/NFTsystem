@@ -1,0 +1,82 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// 用户表 (同步链上毕业生数据)
+model User {
+  id            Int         @id @default(autoincrement())
+  walletAddress String      @unique // 钱包地址 (核心标识)
+  studentId     String?     @unique // 学号
+  name          String?     // 姓名
+  college       String?     // 学院
+  major         String?     // 专业
+  
+  // 链上关键状态 (从Graduate结构体同步)
+  hasClaimed    Boolean     @default(false) // 是否已获得官方NFT
+  mintedAt      DateTime?   @db.Timestamptz(3) // 首次获得官方NFT时间 (带时区)
+  selfMintCount Int         @default(0) // 个人NFT铸造次数
+  pityCounter   Int         @default(0) // 保底计数 (0-20)
+  
+  isRegistered  Boolean     @default(false) // 是否已注册
+  registeredAt  DateTime?   @db.Timestamptz(3) // 注册时间 (带时区)
+  createdAt     DateTime    @default(now()) @db.Timestamptz(3)
+  updatedAt     DateTime    @updatedAt @db.Timestamptz(3)
+
+  nfts          NFTRecord[]
+  activityLogs  ActivityLog[]
+}
+
+// NFT记录表 (同步链上铸造/拥有记录)
+model NFTRecord {
+  id          Int      @id @default(autoincrement())
+  tokenId     Int      @unique
+  user        User     @relation(fields: [userId], references: [id])
+  userId      Int
+  
+  // NFT类型
+  type        String   // 'official' or 'personal'
+  
+  // 个人NFT特有属性 (从PersonalNFTData结构体同步)
+  rarity      Int?     // 0:Common, 1:Rare, 2:Legendary (仅个人NFT)
+  colorSeed   String?  // 颜色种子 (仅个人NFT)
+  mintNumber  Int?     // 铸造编号 (仅个人NFT)
+  mintTime    DateTime? @db.Timestamptz(3) // 铸造时间 (仅个人NFT，从链上同步，带时区)
+  
+  // 交易信息
+  txHash      String?  // 交易哈希
+  blockNumber Int?     // 区块号
+  syncedAt    DateTime @default(now()) @db.Timestamptz(3) // 数据同步时间 (带时区)
+
+  @@index([userId])
+  @@index([type])
+  @@index([rarity])
+}
+
+// 活动日志表 (用户行为追踪)
+model ActivityLog {
+  id          Int      @id @default(autoincrement())
+  user        User     @relation(fields: [userId], references: [id])
+  userId      Int
+  action      String   // 'REGISTER', 'MINT_PERSONAL', 'MINT_OFFICIAL', 'TRANSFER'
+  details     String?  // JSON string for extra details
+  txHash      String?
+  createdAt   DateTime @default(now())
+}
+
+// 统计数据表 (定时聚合或实时更新)
+model Statistics {
+  id                  Int      @id @default(autoincrement())
+  date                DateTime @unique @db.Date // 每天一条记录
+  totalUsers          Int      @default(0)
+  totalPersonalMints  Int      @default(0)
+  totalOfficialMints  Int      @default(0)
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+}

@@ -1,0 +1,34 @@
+{
+  "name": "特殊奖项 NFT",
+  "description": "杰出贡献者特殊奖项NFT，授予在各领域有突出贡献的毕业生。极度稀有，传说级收藏品。",
+  "image": "ipfs://QmXJ7HaWUuAHKxbwQRoGUTqg7nazQCgPxkpqKCBJtZZdmP",
+  "external_url": "https://your-university.edu/graduation",
+  "attributes": [
+    {
+      "trait_type": "类型",
+      "value": "特殊奖项"
+    },
+    {
+      "trait_type": "稀有度",
+      "value": "传说"
+    },
+    {
+      "trait_type": "年份",
+      "value": "2024"
+    },
+    {
+      "trait_type": "协议",
+      "value": "ERC-1155"
+    },
+    {
+      "trait_type": "荣誉等级",
+      "value": "杰出贡献"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "限量编号",
+      "value": 100,
+      "max_value": 100
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "毕业证书 NFT",
+  "description": "官方数字毕业证书，证明您顺利完成学业。此NFT是您在区块链上的永久学历凭证。",
+  "image": "ipfs://Qmc9XJeHPhxNHBA4oHREfspmbw4Htvm5sFgn6mjMninKXr",
+  "external_url": "https://your-university.edu/graduation",
+  "attributes": [
+    {
+      "trait_type": "类型",
+      "value": "毕业证书"
+    },
+    {
+      "trait_type": "稀有度",
+      "value": "普通"
+    },
+    {
+      "trait_type": "年份",
+      "value": "2024"
+    },
+    {
+      "trait_type": "协议",
+      "value": "ERC-1155"
+    }
+  ]
+}

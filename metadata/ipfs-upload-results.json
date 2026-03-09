@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-12-27T13:48:45.499Z",
+  "contractCID": "QmegCGKRyKFcx63Wyf5YuPUYhJwyR3HuvvkjJrJn24EyU8",
+  "imageCIDs": {
+    "1": "Qmc9XJeHPhxNHBA4oHREfspmbw4Htvm5sFgn6mjMninKXr",
+    "2": "QmYEf3sQsqt9kSJvhGaPpsSQzRByJ4w1f5r91kwNbWMY1W",
+    "3": "QmPJAWYWcj2bUUAfxbT2AkvxNrkJsz2RiU4q63L1jtqrVu",
+    "4": "QmXJ7HaWUuAHKxbwQRoGUTqg7nazQCgPxkpqKCBJtZZdmP"
+  },
+  "metadataCIDs": {
+    "1": "QmeL9zUzhobZDGsnMH8wxb631oBpgc5SJnHyhkk49rAZTB",
+    "2": "QmSfQtqzzpPdDf1ed7fEabhDb2wkLCfUsi1GcGYGo7DkEt",
+    "3": "QmQ3JGo9GteFFXCvCABE9EM2f1zjsMSFA3c8ZhKRCgA5KA",
+    "4": "QmQ6a9vzzMWoWt8VHzBbYA6USQuBrbdWeTcHzcJSuqjKHB"
+  },
+  "baseURI": "ipfs://QmegCGKRyKFcx63Wyf5YuPUYhJwyR3HuvvkjJrJn24EyU8/",
+  "gateway": "https://gateway.pinata.cloud/ipfs/QmegCGKRyKFcx63Wyf5YuPUYhJwyR3HuvvkjJrJn24EyU8"
+}
